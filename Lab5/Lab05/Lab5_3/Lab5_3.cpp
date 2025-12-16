@@ -1,0 +1,19 @@
+// Lab5_3.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
+
+#include <iostream>
+void swap(int& a, int& b) {
+	int temp = a;
+	a = b;
+	b = temp;
+}
+
+int main()
+{
+	int a = 10 , b = 20;
+	std::cout << "Before swap: a = " << a << ", b = " << b << std::endl;
+	swap(a, b);
+	std::cout << "After swap: a = " << a << ", b = " << b << std::endl;
+	return 0;	
+}
+
